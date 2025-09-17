@@ -16,7 +16,10 @@ log "Updating system..."
 sudo apt-get update -y && sudo apt-get upgrade -y
 
 log "Installing base packages..."
-sudo apt-get install -y curl wget git build-essential ca-certificates jq unzip htop
+sudo apt-get install -y curl ca-certificates
+
+# Uncomment to install more recommended packages
+# sudo apt-get install -y wget git build-essential jq unzip htop
 
 # -------------------------------------
 # NVM + Node (LTS) + npm
